@@ -1,0 +1,301 @@
+@charset "utf-8";
+@import "reset.css";
+
+/* ----------------------------------------------------
+	全体の設定
+---------------------------------------------------- */
+html{
+	height: 100%;
+}
+body {
+  height: 100%;			
+  font-size:83.333%;
+  line-height:130%;
+  font-family: "MS P Gothic", sans-serif;
+  color: #666666;
+  background-color:#EAEAEA;
+}
+
+/* for IE6 */
+* html body {
+    font-size: 75%;
+}
+
+/* for IE7 */
+*:first-child+html body {
+    font-size: 75%;
+} 
+
+/*画像下部の意図しない余白をなくす*/
+img{ vertical-align : bottom; }
+a {outline: none;}
+
+/* ----------------------------------------------------
+	リンクカラー
+---------------------------------------------------- */
+a:link {color:#E4007F;}
+a:visited {color:#E4007F;}
+a:active {color:#E4007F; text-decoration:none;}
+a:hover {color:#E4007F; text-decoration:none;}
+
+/* ----------------------------------------------------
+	その他カラー、汎用設定
+---------------------------------------------------- */
+.orange{color:#ff6600;}
+.caution{color:#ff0000;font-weight:bold;}
+.s_txt{font-size:smaller;padding-left: 15px;}
+.l_txt{font-size:large;line-height:130%;color:#E4007F;font-weight:bold;}
+/* ----------------------------------------------------
+	#container
+---------------------------------------------------- */
+#container {
+	width: 900px;
+	height:100%;
+	min-height: 100%;
+	margin: 0px auto;	
+	}
+body > #contents {
+    height: auto;
+}
+/* ----------------------------------------------------
+	#header　トップページのヘッダ
+---------------------------------------------------- */
+#header{
+	height: 620px;
+}
+#header h1{
+	display:none;
+}
+#header p{
+	display:none;
+}
+.h_area{
+	margin:0;
+	padding:0px 70px 0px 0px;
+	text-align:right;
+}
+.head2{
+	height:145px;
+	background-image:  url(../images/header02.png);
+}
+.head3{
+	height:235px;
+	background-image:  url(../images/header03.png);
+}
+/* ----------------------------------------------------
+	#sec_header セカンドページのヘッダ
+---------------------------------------------------- */
+#sec_header{
+	height: 130px;
+}
+/* ----------------------------------------------------
+	#contents_outer	
+---------------------------------------------------- */
+#contents_outer{
+	background-image:  url(../images/bg.png);
+}
+/* ----------------------------------------------------
+	#navi
+---------------------------------------------------- */
+#navi{
+	width:800px;
+	height:40px;
+	margin:auto;
+	background-image:  url(../images/bg_navi.gif);
+}
+#navi ul {
+margin: 0;
+padding: 0;
+}
+#navi ul li{
+list-style-type: none;  
+display:table-cell;  
+*display:inline;  
+*zoom:1;
+}
+/* ----------------------------------------------------
+	#contents
+---------------------------------------------------- */
+#contents{
+	width:800px;
+	margin:auto;	
+}
+.cont_top{
+	height:35px;
+	background-image:  url(../images/cont_top.gif);
+	background-repeat: no-repeat;
+}
+.cont_main{
+	background-image:  url(../images/cont_main.gif);
+}
+.cont_bottom{
+	height:35px;
+	background-image:  url(../images/cont_bottom.gif);
+	background-position:bottom;
+	background-repeat: no-repeat;
+}
+h2{
+	text-align:center;
+}
+.area{
+	width:700px;
+	margin:auto;
+	padding:15px 0px 0px 0px;
+}
+.area p{
+	padding-left:5px;
+}
+/* ----------------------------------------------------
+	#footer
+---------------------------------------------------- */
+#footer{
+	width:800px;
+	/* height:112px; */
+	margin:auto;
+	padding-top:20px;
+	text-align: center;
+	background-image:  url(../images/bg_footer.gif);
+	background-repeat: no-repeat;
+}
+.f_area{
+}
+.bn_area{
+	height:50px;
+}
+.bn{
+	margin-right:15px
+}
+
+/* ----------------------------------------------------
+	トップの各コンテンツ
+---------------------------------------------------- */
+/*whatsnew*/
+#whatsnew{
+	width:255px;
+	height:213px;
+	margin:0px 0px 0px auto;
+	background: #FFF;
+	border:1px solid #e32e8f;;
+}
+#wn_inner{
+	height:181px;
+	padding:0px 5px 0px 5px;
+	text-align:left;
+	overflow:auto;
+}
+#wn_inner dl dt{
+	padding:5px 5px 0px 5px;
+	color: #de0074;
+	font-weight:bold;
+}
+#wn_inner dl dd{
+	padding:5px 5px 5px 15px;
+	border-bottom:1px solid #de0074;
+	background-image:  url(../images/tri.gif);
+	background-position:left top;
+	background-repeat: no-repeat;
+}
+/*商品情報*/
+#outline{
+	padding-bottom:30px;
+	padding-left:5px;	
+}
+#product{
+	margin-bottom:15px;
+	padding:7px;
+	background-color:#FFF2E0;
+}
+#jacket{
+	margin-right:7px;
+}
+#pinfo{
+	width:429px;
+}
+.cart{
+	padding-bottom:3px;
+}
+/*関連商品*/
+.kakobtn{
+	margin-right:5px;
+	float:left;
+}
+
+/* ----------------------------------------------------
+	あらすじ
+---------------------------------------------------- */
+/*あらすじ*/ 
+#story{
+	margin-bottom:30px;
+}
+/*キャラクター紹介*/ 
+h3{
+	margin-left:50px;
+}
+#chara_all{
+width:695px;
+margin:8px auto 0px auto;
+}
+
+#chara_all .chara_one{
+width:342px;
+padding:0 2px 3px 0;
+float:left;}
+
+#chara_all .chara_one .face{
+float:left;
+width:105px;
+text-align:center;}
+
+#chara_all .chara_one .hon{
+float:right;
+width:230px;
+height:195px;
+padding:2px;
+background: url(../images/chara/chara_setu_back.gif);
+text-align:center;}
+
+.margintop5{
+margin:5px 0 0 0;}
+
+.marginleft15{
+margin:0 0 0 15px;}
+/* ----------------------------------------------------
+	準備中コンテンツ
+---------------------------------------------------- */
+.pre{
+	height:235px;
+	background-image:  url(../images/bg_pre.jpg);
+	background-position:right bottom;	
+	background-repeat: no-repeat;	
+}
+/* ----------------------------------------------------
+	ラジオ
+---------------------------------------------------- */
+.radio_new_title{
+	margin:10px 0 10px 0px;
+}
+.mp3{
+	margin:10px 0;
+	text-align:center;
+	font-size:90%;
+	color:#e4007f;
+}
+.radio_new_soto{
+	background-color:#FFF2E0;
+	border:1px dotted #e4007f;
+	padding:6px 6px 15px 6px;
+}
+.radio_new{
+	width:640px;
+	margin:6px auto;
+}
+.radio_new_left{
+	float:left;
+	width:400px;
+}
+.radio_new_right{
+	float:right;
+	width:200px;
+	}
+.newicon_outer{width:100%; height:17px; margin:0;padding:0;}	
+.newicon{width:70px; height:17px;margin:0; padding:0; float:right;}

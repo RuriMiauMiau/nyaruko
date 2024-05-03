@@ -1,0 +1,148 @@
+
+@charset "utf-8";
+
+
+body, h1{
+	margin: 0;
+}
+body{
+	background: url(images/black_bg.jpg) repeat;
+	font-family: 'ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3','Hiragino Kaku Gothic Pro','ãƒ¡ã‚¤ãƒªã‚ª',Meiryo,Osaka,'ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯','MS P Gothic',sans-serif;
+	font-size: 14px;
+}
+a img{
+	border: none;
+}
+
+#main{
+	background: url(images/bg.png) repeat;
+}
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+/*header-style
+----------------------------------------------------------*/
+
+#contents{
+	position:relative;
+}
+
+
+/*footer-style
+----------------------------------------------------------*/
+
+
+/*sec-style
+----------------------------------------------------------*/
+
+.sec-title{
+	position:absolute;
+	top:-25px;
+	width:389px;
+	height:203px;
+	z-index:5;
+}
+.sec-title a{
+	display:block;
+}
+.sec-character{
+	position:absolute;
+	top:-65px;
+	left:335px;
+	width:295px;
+	height:323px;
+	z-index:1;
+}
+
+#inner-body{
+	width:1000px;
+	clear:both;
+	padding-bottom:10px;
+	background:url(images/gnavi-bg.png) repeat;
+	position:relative;
+	z-index: 5;
+}
+#inner-body h1{
+	background:url(images/h1bar.png) no-repeat;
+	width:935px;
+	height:30px;
+	padding:12px 0 0 65px;
+	position: relative;
+	top:-2px;
+}
+
+
+/*products-style
+----------------------------------------------------------*/
+
+/*chara-style
+----------------------------------------------------------*/
+.chara #inner-body{
+	width: 920px;
+	height: 930px;
+	padding: 0 40px;
+}
+.chara #inner-body h1{
+	margin-left: -40px;
+}
+.chara #inner-body #nameList{
+	width: 250px;
+	height: 500px;
+	background: #ffffff;
+	position: relative;
+	top:100px;
+	padding-top: 20px;
+	z-index: 100;
+}
+.chara #charaImg{
+	position: relative;
+}
+.chara #charaImg div div{
+	position: absolute;
+	top:0px;
+	right: -10px;
+}
+
+
+.chara #nameList{
+
+}
+.chara #nameList li{
+	padding: 6px 0;
+	width: 250px;
+	height: 50px;
+}
+.chara #nameList li.active img{
+	opacity: 0;
+	filter: alpha(0);
+}
+.chara #nameList li#chara01{
+	background: url(images/chara/list01_over.jpg) no-repeat 0px 6px;
+}
+.chara #nameList li#chara02{
+	background: url(images/chara/list02_over.jpg) no-repeat 0px 6px;
+}
+.chara #nameList li#chara03{
+	background: url(images/chara/list03_over.jpg) no-repeat 0px 6px;
+}
+.chara #nameList li#chara04{
+	background: url(images/chara/list04_over.jpg) no-repeat 0px 6px;
+}
+.chara #nameList li#chara05{
+	background: url(images/chara/list05_over.jpg) no-repeat 0px 6px;
+}
+.chara #nameList li#chara06{
+	background: url(images/chara/list06_over.jpg) no-repeat 0px 6px;
+}
+.chara #nameList li#chara07{
+	background: url(images/chara/list07_over.jpg) no-repeat 0px 6px;
+}
+
+
+/*spec-style
+----------------------------------------------------------*/
+
+/* special ______________________________________________*/
+

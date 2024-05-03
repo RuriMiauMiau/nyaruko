@@ -1,0 +1,185 @@
+@charset "utf-8";
+/* ====================================================
+	
+	
+	
+	スタイルの初期化
+	
+	
+	
+====================================================*/
+
+html {
+	overflow-y: scroll;
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+fieldset,img { 
+	border:0;
+}
+
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+
+ol,ul {
+	list-style:none;
+}
+
+caption,th {
+	text-align:left;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+
+q:before,q:after {
+	content:'';
+}
+
+fieldset,img {
+	border:none;
+}
+
+abbr,acronym {
+	border:0;
+}
+
+p {
+	text-align:justify;
+}
+
+/* ----------------------------------------------------
+	letter-spacingを使用した際、
+	<br>を2個書かないと改行しないのを解消
+---------------------------------------------------- */
+
+br { /*  */
+	letter-spacing:normal;
+}
+
+
+
+
+
+/* ====================================================
+	
+	
+	
+	よく使用するクラスライブラリ
+	
+	
+	
+====================================================*/
+
+/* ----------------------------------------------------
+	text-align
+---------------------------------------------------- */
+.ac {
+	text-align: center;
+}
+
+.ar {
+	text-align: right;
+}
+
+.al {
+	text-align: left;
+}
+
+/* ----------------------------------------------------
+	float
+---------------------------------------------------- */
+
+.fr {
+	float: right;
+}
+
+.fl {
+	float: left;
+}
+
+/* ====================================================
+	
+	
+	
+	creafixなどフロート解除関連
+	
+	
+	
+====================================================*/
+
+.clear {
+	clear: both;
+}
+
+/* ----------------------------------------------------
+	clearfix の代用
+	<div class="hr"><hr /></div>
+---------------------------------------------------- */
+
+div.hr { clear:both; }
+div.hr hr { display:none; }
+
+/* ----------------------------------------------------
+	clearfix
+---------------------------------------------------- */
+
+.clearfix {
+	zoom:1;
+	position:relative;	
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 1px;
+	clear: both;
+	visibility: hidden;
+	font-size: 0;
+	line-height: 0;
+	margin: -1px 0 0 0;
+}
+
+/* for MacIE5 \*//*/
+.clearfix {
+	height: auto;
+	overflow: hidden;
+}
+
+/* ----------------------------------------------------
+	汎用クラス
+---------------------------------------------------- */	
+
+.pt10{
+	padding-top: 10px;
+	}
+	
+.pb10{
+	padding-bottom: 10px;
+	}	
+	
+.pt20{
+	padding-top: 20px;
+	}	
+	
+.mr20 {
+	margin: 20px;
+}	
+	
+.mrl10{
+	margin-right: 10px;
+	margin-left: 10px;
+	}
