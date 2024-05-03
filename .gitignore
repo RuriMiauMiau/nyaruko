@@ -1,0 +1,15 @@
+# Directorios de compilación y caché
+node_modules/
+dist/
+build/
+.cache/
+000webhost/
+
+# Archivos de configuración
+.env
+.DS_Store
+.vscode/
+index81a0.html
+index875b.html
+index1026.html
+indexbc3b.html
